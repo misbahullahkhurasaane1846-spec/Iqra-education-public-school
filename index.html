@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IQRA EDUCATION PUBLIC SCHOOL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+<script src="http://kit.fontawesome.com/a076d05399.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url(bgimg2.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+
+    }
+
+    nav {
+        background-color: rgb(112, 59, 59);
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+
+
+    }
+
+    .logo {
+        color: white;
+        font-size: 35px;
+        font-weight: bolder;
+        padding-left: 20px;
+        display: inline;
+        line-height: 70px;
+    }
+
+    nav ul {
+        float: right;
+        margin: 20px;
+        color: white;
+        padding-top: 5px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 10px;
+        color: white;
+        margin: 0 0px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 15px;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: aliceblue;
+        transition: ease 0.3s;
+        color: black;
+        border-radius: 5px;
+    }
+
+    a:active {
+        background-color: blue;
+        border-radius: 5px;
+    }
+
+    .menu-btn {
+        font-size: 20px;
+        color: white;
+        float: right;
+        display: none;
+        margin-right: 3%;
+    }
+
+    #click {
+        display: none;
+    }
+
+    #h1 {
+        font-size: 15vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        margin-top: 0;
+        color: blue;
+        padding-top: 0%;
+        /* background-color: rgba(255, 228, 196, 0.678); */
+        width: 40%;
+        margin: 0 auto;
+        border-radius: 8px;
+        text-shadow: 0 4px 10px black;
+
+    }
+
+    div h2 {
+        font-size: 3vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        margin-top: 15px;
+        font-style: italic;
+        color: blueviolet;
+        text-shadow: 0 2px 7px black;
+    }
+
+    h3 {
+        font-size: 5vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        margin-top: 150px;
+        font-style: italic;
+        color: blueviolet;
+        text-shadow: 0 3px 8px black;
+    }
+
+    h4 {
+        font-size: 2.3vw;
+        position: relative;
+        text-align: center;
+        word-spacing: 3vw;
+        background-color: aqua;
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: -1.5vh;
+        box-shadow: 0 2px 6px black;
+    }
+
+    #carouselExampleAutoplaying {
+        margin-top: 25vh;
+    }
+
+    .carousel-item img {
+        height: 80vh;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 8px;
+        border-color: brown;
+        border-width: 5px;
+        border-style: solid;
+    }
+
+    strong ul li {
+        list-style: disc;
+
+    }
+
+    strong ul {
+        margin-left: 30vw;
+        font-size: 2vw;
+        margin-top: 8vh;
+        /* background-color: rgba(255, 228, 196, 0.747); */
+        width: 35%;
+        /* margin: 0 auto; */
+        border-radius: 8px;
+    }
+
+    #pmsg {
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 20vh;
+        text-decoration: underline;
+        margin-left: 1vw;
+        line-height: 0%;
+        padding-top: 5vh;
+    }
+
+    #pmsg2 {
+        font-size: 25px;
+        margin-left: 5vw;
+        line-height: 25px;
+    }
+
+    #itlc {
+        position: relative;
+        top: 3vh;
+    }
+
+    #fee_btn {
+        background-color: rgb(80, 138, 245);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border: none;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+        margin-top: -5px;
+    }
+
+    #fee_btn:hover {
+        background-color: blue;
+        color: white;
+    }
+
+    footer a:hover {
+        color: black !important;
+    }
+
+    .card1:hover {
+        animation: all;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /* @keyframes animate {
+        from {
+            left: 2px;
+
+        }
+
+        to {
+            right: 2px;
+        } */
+
+
+
+
+    /* //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+       //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+       //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<// */
+
+    @media all and (orientation: portrait) {
+        nav ul li a {
+            font-size: 30px;
+            background: none;
+        }
+
+        body {
+            background-image: url(bgimg2.jpg);
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+        }
+
+        .menu-btn {
+            display: block;
+            line-height: 70px;
+            margin-right: 5%;
+        }
+
+        .menu-btn:active {
+            color: blue;
+            background: none;
+        }
+
+        nav ul {
+            position: fixed;
+            top: 0px;
+            right: -100%;
+            background-color: rgb(56, 55, 129);
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            margin-top: 70px;
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 0;
+            transition: all ease 0.4s;
+            z-index: 2;
+
+        }
+
+        #click:checked~ul {
+            right: 0%;
+        }
+
+        #click {
+            display: none;
+        }
+
+        nav ul li {
+            margin-top: 80px;
+            display: block;
+            font-size: 40px;
+            background: none;
+
+        }
+
+        nav ul li a:hover {
+            color: blue;
+            background: none;
+            -webkit-tap-highlight-color: transparent;
+            z-index: 1;
+        }
+
+        #h1 {
+            /* font-size: 100px; */
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            margin-top: 0px;
+            color: blue;
+        }
+
+        h2 {
+            font-style: italic;
+            color: blueviolet;
+        }
+
+        h3 {
+            font-style: italic;
+            color: blueviolet;
+            margin-top: 15vh;
+        }
+
+        div {
+            z-index: -10;
+        }
+
+        h4 {
+            margin-top: -1vh;
+        }
+
+        #carouselExampleAutoplaying {
+            margin-top: 5vh;
+        }
+
+        .carousel-item img {
+            height: 20vh;
+            width: 90%;
+            margin: 0 auto;
+            object-fit: cover;
+            border-color: brown;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        strong ul li {
+            list-style: disc;
+
+        }
+
+        strong ul {
+            margin-left: 25vw;
+            font-size: 2vw;
+            margin-top: 3vh;
+            /* background-color: rgba(255, 228, 196, 0.747); */
+            width: 35%;
+            /* margin: 0 auto; */
+            border-radius: 8px;
+        }
+
+        #pmsg {
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 50px;
+            text-decoration: underline;
+            margin-left: 1vw;
+            line-height: 0%;
+            padding-top: 20px;
+        }
+
+        #pmsg2 {
+            font-size: 15px;
+            margin-left: 5vw;
+            line-height: 20px;
+        }
+
+        #itlc {
+            position: relative;
+            top: 3vh;
+        }
+
+        .msg {
+            background-color: bisque;
+            width: 90%;
+            height: 600px;
+            border-radius: 5px;
+            margin-top: -20px;
+        }
+    }
+
+    @media all (min-width: 720px) and (max-width: 1104px) {
+        .msg {
+            height: 300px;
+        }
+    }
+</style>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+<body>
+    <nav>
+        <label class="logo">I.E.P.S</label>
+        <input style="width: 10px; height: 10px;" type="checkbox" id="click">
+        <label for="click" class="menu-btn">Menu</label>
+        <ul>
+           <!-- <li><a id="adm" href="form.html">Apply Now</a></li> -->
+            <li><a href="admission_details.html">Admission Details</a></li>
+            <li><a href="Teacher_staff.html">Teachers Staff</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="fee_structure.html">Fee Structure</a></li>
+            <li><a href="http://wa.me/923439879356">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h3>
+            Welcome
+        </h3>
+        <h2>
+            To
+        </h2>
+        <h1 id="h1">
+            I.E.P.S
+        </h1>
+        <h4>
+            Iqra Education Public School
+        </h4>
+        <strong>
+            <ul>
+                <li>Quality Education</li>
+                <li>Experienced Staff</li>
+                <li>Peasful Enviroment</li>
+                <li>Islamic + Modern Education</li>
+            </ul>
+        </strong>
+
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Sliding <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="slide1.jpg" class="d-block w-90" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="slide2.jpg" class="d-block w-90" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="slide3.jpg" class="d-block w-90" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+        <div class="card mb-3"
+            style="max-width: 540px; background-color: bisque; margin-top: 100px; max-width: 80%; box-shadow: 0 4px 10px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="sadiq.jpg" class="img-fluid rounded-start"
+                        style="box-shadow: 0 4px 10px; border-radius: 8px;" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Principal's Message:</h5>
+                        <p class="card-text"><i id="itlc">Assalamu Alikuim Warahmatullahi Wabarakatuh,</i><br>
+                            <br>
+                            <br>
+                            Welcome to IQRA EDUCATION PUBLIC SCHOOL!<br>
+                            Our school belives that every child is special and has the power to learn and grow.<br>
+                            We work to hard to gove our students a safe, friendly, and active place to study.<br>
+                            Along with books, we also teach them good manners, discipline, and how to respect
+                            others.<br>
+                            <br>
+                            Our Teachers are kind and helful. They guide Students at every step and help them become
+                            <br>
+                            confident and responsible.We also focus on islamic values, so our students grow with
+                            knowledge<br>
+                            and strong character.<br>
+                            <br>
+                            I hope that with the support of parents and the efforts of Teachers, Our<br>
+                            students well become good Muslims and useful members of society.<br>
+                            <br>
+                            Thank you for trusting us with yor child's future.<br>
+                            <br>
+                            <i>Principal Iqra Education Public School</i>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Mufti Sadiq Shah Sahib</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-3"
+            style="max-width: 540px; background-color: bisque; margin-top: 80px; margin-left: auto; max-width: 80%; box-shadow: 0 4px 10px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="ghazal.jpg" class="img-fluid rounded-shadow"
+                        style="box-shadow: 0 4px 10px; border-radius: 8px;" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Co-Coordinator's Message:</h5>
+                        <p class="card-text"><i id="itlc">Assalamu Alikuim Warahmatullahi Wabarakatuh,</i><br>
+                            <br>
+                            <br>
+                            At our school, We believe that every child is a gift from Allah and has the ability to<br>
+                            learn, grow, and shine.Our aim is to provide a caring and positive enviroment where students
+                            not only gain knowledge
+                            but also learn Islamic values, discipline, and respect.<br>
+                            <br>
+                            We focus on the overall development of our students - academically, morally, and
+                            spiritually.<br>
+                            We teach our children how to be kind, helpul, and responsible members of society.<br>
+                            <br>
+                            Our dedicatid Teachers work hard to ensure every student feels safe, confident, and
+                            encouraged<br>
+                            to achieve their best. <br>
+                            We also maintain a strong partnership with parents, because we believe that home and school
+                            must work
+                            togather for a child's success.<br>
+                            <br>
+                            May Allah (SWT) guide us in our efforts and bless our students with knowledge, wisdom, and
+                            strong character.<br>
+                            <br>
+                            <i>Co-Coordinator</i>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Mufti RabNawaz Sahib</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="card1 card text-bg-primary mb-3 card_animate"
+            style="max-width: 30rem; height: 50vh; margin-left: 100px; box-shadow: 0 4px 10px black; margin-top: 100px;">
+            <div class="card-header" style="font-size: x-large; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h1 class="card-title" style="text-decoration: underline;">Islamic + Modern Education:</h1>
+                <p class="card-text" style="font-size: x-large;">We provide a balanced Education with Islamic teaching
+                    and modern academics.</p>
+            </div>
+        </div>
+        <!-- <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header"style="font-size: larger; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+            </div>
+        </div> -->
+        <div class="card1 card text-bg-success mb-3"
+            style="max-width: 30rem;  height: 50vh; margin-left: auto; margin-right: 100px;  box-shadow: 0 4px 10px black;">
+            <div class="card-header" style="font-size: x-large; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h1 class="card-title" style="text-decoration: underline;">Qualified & Caring Staff:</h1>
+                <p class="card-text" style="font-size: x-large;">Our Teachers are well-trained, Experienced, and
+                    dedicatid to each child's Success.</p>
+            </div>
+        </div>
+        <div class="card1 card text-bg-danger mb-3"
+            style="max-width: 30rem; height: 50vh; margin-left: 100px;  box-shadow: 0 4px 10px black;">
+            <div class="card-header" style="font-size: x-large; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h1 class="card-title" style="text-decoration: underline;">Safe & peaceful Enviroment:</h1>
+                <p class="card-text" style="font-size:x-large;">A secure and diciplined setting that nurtures respect
+                    and resposibility.</p>
+            </div>
+        </div>
+        <div class="card1 card text-bg-warning mb-3"
+            style="max-width: 30rem; height: 50vh; margin-left: auto; margin-right: 100px;  box-shadow: 0 4px 10px black;">
+            <div class="card-header" style="font-size: x-large; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h1 class="card-title" style="text-decoration: underline;">Focus on Tarbiyah & Character:</h1>
+                <p class="card-text" style="font-size: x-large;">We help Students build strong moral values and Islamic
+                    Character.</p>
+            </div>
+        </div>
+        <div class="card1 card text-bg-info mb-3"
+            style="max-width: 30rem; height: 50vh; margin-left: 100px;  box-shadow: 0 4px 10px black;">
+            <div class="card-header" style="font-size: x-large; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h1 class="card-title" style="text-decoration: underline;">Strong Parent-Teacher Partnership:</h1>
+                <p class="card-text" style="font-size:x-large;">We believe in working together with parents for each
+                    Child's better Future.</p>
+            </div>
+        </div>
+        <div class="card1 card text-bg-dark mb-3"
+            style="max-width: 30rem; height: 54vh; margin-left: auto; margin-right: 100px;  box-shadow: 0 4px 10px black; margin-bottom: 50px;">
+            <div class="card-header" style="font-size: x-large; font-weight: bold;">Why Choose Us</div>
+            <div class="card-body">
+                <h1 class="card-title" style="text-decoration: underline;">Affordable Fee Structre:</h1>
+                <p class="card-text" style="font-size:x-large;">Quality Education at a Fee that's with in reach for
+                    most Families.<br>
+                    <i style="font-size: medium; line-height: 5px;">For Monthly Fee Structre. Please click the Button
+                        Below.</i>
+                </p>
+                <a id="fee_btn" style="color: white; text-decoration: none; width: 50%;" href="fee_structure.html">Fee
+                    Structure</a>
+            </div>
+
+        </div>
+        <div class="col-12 mb-5 ">
+            <!-- <a href="form.html" class="btn btn-primary"
+                style="display: flex; margin: 0 auto; width: 50%;  justify-content: center; margin-top: 100px; box-shadow: 0 6px 15px black;"
+                type="submit">Apply Now</a> -->
+        </div> 
+ 
+
+
+
+
+        <footer class="py-3 my-4 mt-10" style="background-color: rgba(24, 21, 21, 0.747);">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="form.html" class="nav-link px-2 text-white">Apply Now</a>
+                </li>
+                <li class="nav-item"><a href="admission_details.html" class="nav-link px-2 text-white">Admission
+                        Details</a></li>
+                <li class="nav-item"><a href="Teacher_staff.html" class="nav-link px-2 text-white">Teachers Staff</a>
+                </li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-white">Gallery</a></li>
+                <li class="nav-item"><a href="fee_structure.html" class="nav-link px-2 text-white">Fee Structure</a>
+                </li>
+                <li class="nav-item"><a href="http://wa.me/923439879356" class="nav-link px-2 text-white">Contact Us</a>
+                </li>
+            </ul>
+            <p class="text-center text-white">© 2025 Iqra Education Public School.<br> All rights reserved</p>
+        </footer>
+
+
+
+</body>
+
+</html>
